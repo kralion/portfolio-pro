@@ -13,6 +13,13 @@ export const metadata: Metadata = {
   title: "Brayan Paucar - Developer",
   description:
     "Brayan Paucar is a software developer both mobile and web. He is a digital nomad and travels around the world while working remotely.",
+  icons: [
+    {
+      rel: "icon",
+      url: "https://avatars.githubusercontent.com/u/66649036?v=4",
+      type: "image/x-icon",
+    },
+  ],
 };
 
 export default function RootLayout({
