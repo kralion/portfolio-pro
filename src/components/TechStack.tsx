@@ -11,12 +11,7 @@ export const TechStack = () => {
 
       className: "h-10 w-14",
     },
-    {
-      title: "AWS",
-      src: "/images/logos/aws.webp",
 
-      className: "h-10 w-10",
-    },
     {
       title: "Figma",
       src: "/images/logos/figma.png",
@@ -24,8 +19,20 @@ export const TechStack = () => {
       className: "h-10 w-8",
     },
     {
-      title: "Framer Motion",
-      src: "/images/logos/framer.webp",
+      title: "TypeScript",
+      src: "/images/logos/ts.svg",
+
+      className: "h-10 w-10",
+    },
+    {
+      title: "Prisma",
+      src: "/images/logos/prisma.svg",
+
+      className: "h-10 w-10",
+    },
+    {
+      title: "tRPC",
+      src: "/images/logos/trpc.svg",
 
       className: "h-10 w-10",
     },
