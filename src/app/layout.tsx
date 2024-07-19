@@ -10,14 +10,13 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Brayan Paucar - Developer",
+  title: "Brayan Paucar",
   description:
     "Brayan Paucar is a software developer both mobile and web. He is a digital nomad and travels around the world while working remotely.",
   icons: [
     {
       rel: "icon",
-      url: "https://avatars.githubusercontent.com/u/66649036?v=4",
-      type: "image/x-icon",
+      url: "https://github.com/kralion/portfolio/blob/main/public/icon.png?raw=true",
     },
   ],
 };
@@ -36,8 +35,8 @@ export default function RootLayout({
         )}
       >
         <Sidebar />
-        <div className="lg:pl-2 lg:pt-2 bg-gray-100 flex-1 overflow-y-auto">
-          <div className="flex-1 bg-white min-h-screen lg:rounded-tl-xl border border-transparent lg:border-neutral-200 overflow-y-auto">
+        <div className="lg:pl-2 lg:pt-2 bg-gray-100 dark:bg-neutral-900 flex-1 overflow-y-auto">
+          <div className="flex-1 bg-white dark:bg-neutral-800 min-h-screen lg:rounded-tl-xl border border-transparent lg:border-neutral-200 dark:border-neutral-700  overflow-y-auto">
             {children}
           </div>
         </div>

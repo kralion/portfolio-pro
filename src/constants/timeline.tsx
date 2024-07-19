@@ -13,8 +13,8 @@ export const timeline = [
     ],
   },
   {
-    company: "Grublo Inc.",
-    title: "Backend Developer",
+    company: "Grobles Inc.",
+    title: "Software Architect",
     date: "2023 - 2024",
     description:
       "Designed and maintained backend systems, ensuring seamless integration and efficiency.",

@@ -2,6 +2,7 @@ import {
   IconBrandGithub,
   IconBrandLinkedin,
   IconBrandX,
+  IconFileCv,
 } from "@tabler/icons-react";
 
 export const socials = [
@@ -19,5 +20,10 @@ export const socials = [
     href: "https://github.com/kralion",
     label: "GitHub",
     icon: IconBrandGithub,
+  },
+  {
+    href: "https://read.cv/brayanpaucar",
+    label: "CV",
+    icon: IconFileCv,
   },
 ];
