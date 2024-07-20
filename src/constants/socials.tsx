@@ -2,7 +2,7 @@ import {
   IconBrandGithub,
   IconBrandLinkedin,
   IconBrandX,
-  IconFileCv,
+  IconUserSearch,
 } from "@tabler/icons-react";
 
 export const socials = [
@@ -23,7 +23,7 @@ export const socials = [
   },
   {
     href: "https://read.cv/brayanpaucar",
-    label: "CV",
-    icon: IconFileCv,
+    label: "Read CV",
+    icon: IconUserSearch,
   },
 ];

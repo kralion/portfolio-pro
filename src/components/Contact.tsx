@@ -61,7 +61,7 @@ export const Contact = () => {
         <textarea
           placeholder="Your Message"
           rows={10}
-          className="bg-neutral-10 mt-4 dark:bg-neutral-900 focus:outline-none focus:ring-2 focus:ring-neutral-200 dark:focus:ring-neutral-700 px-2 py-2 rounded-md text-sm text-neutral-700 dark:text-neutral-400 w-full"
+          className="bg-neutral-100 mt-4 dark:bg-neutral-900 focus:outline-none focus:ring-2 focus:ring-neutral-200 dark:focus:ring-neutral-700 px-2 py-2 rounded-md text-sm text-neutral-700 dark:text-neutral-400 w-full"
           value={formData.message.value}
           onChange={(e) => {
             setFormData({
