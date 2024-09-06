@@ -88,8 +88,8 @@ export const products = [
     ),
   },
   {
-    href: "https://grublo.netlify.app",
-    title: "Grublo",
+    href: "https://grobles.netlify.app",
+    title: "Grobles",
     description:
       "Software development company with a focus on web development and design.",
     thumbnail: "/images/grublo.jpg",
@@ -99,7 +99,7 @@ export const products = [
     content: (
       <div>
         <p>
-          Grublo specializes in creating high-quality websites and web
+          Grobles specializes in creating high-quality websites and web
           applications, combining innovative design with robust development
           practices. Our team of experts delivers customized solutions tailored
           to meet the unique needs of each client, ensuring functionality,
@@ -107,7 +107,7 @@ export const products = [
         </p>
         <p>
           As a result, businesses can enhance their online presence, engage
-          their audience effectively, and achieve their digital goals. Grublo’s
+          their audience effectively, and achieve their digital goals. Grobles’s
           commitment to excellence in web development and design makes us a
           trusted partner for companies looking to succeed in the digital
           landscape.
