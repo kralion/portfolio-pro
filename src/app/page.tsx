@@ -4,11 +4,20 @@ import { Highlight } from "@/components/Highlight";
 import { Paragraph } from "@/components/Paragraph";
 import { Products } from "@/components/Products";
 import { TechStack } from "@/components/TechStack";
+import ProfilePic from "../../public/images/profile-pic.png";
+import Image from "next/image";
 
 export default function Home() {
   return (
     <Container>
       <span className="text-4xl">👋</span>
+      <Image
+        src={ProfilePic}
+        alt="profile"
+        className="my-5 rounded-full shadow-xl lg:mx-0 mx-auto"
+        width={200}
+        height={200}
+      />
       <Heading className="font-black">Hello there! I&apos;m Brayan</Heading>
       <Paragraph className="max-w-xl mt-4">
         I&apos;m a full-stack developer that loves{" "}

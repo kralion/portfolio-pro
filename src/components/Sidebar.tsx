@@ -2,7 +2,7 @@
 import { navlinks } from "@/constants/navlinks";
 import { socials } from "@/constants/socials";
 import { Navlink } from "@/types/navlink";
-import { IconLayoutSidebarRightCollapse, IconMoon } from "@tabler/icons-react";
+import { IconMenu, IconX } from "@tabler/icons-react";
 import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
@@ -11,7 +11,7 @@ import React, { useState } from "react";
 import { twMerge } from "tailwind-merge";
 import { Badge } from "./Badge";
 import { Heading } from "./Heading";
-import { ToggleMode } from "./ToggleMode";
+import { ThemeToggle } from "./ToggleMode";
 
 const isMobile = () => {
   if (typeof window === "undefined") return false;
@@ -38,15 +38,19 @@ export const Sidebar = () => {
               <Navigation setOpen={setOpen} />
             </div>
             <Badge href="/resume" text="Read Resume" />
-            <ToggleMode />
+            <ThemeToggle />
           </motion.div>
         )}
       </AnimatePresence>
       <button
-        className="fixed lg:hidden bottom-4 right-4 h-8 w-8 border border-neutral-200 rounded-full backdrop-blur-sm flex items-center justify-center z-10"
+        className="fixed lg:hidden bottom-4 right-4 h-10 w-10 border border-neutral-200 rounded-full backdrop-blur-sm flex items-center justify-center z-10"
         onClick={() => setOpen(!open)}
       >
-        <IconLayoutSidebarRightCollapse className="h-4 w-4 text-secondary" />
+        {open ? (
+          <IconX className="h-4 w-4 text-secondary" />
+        ) : (
+          <IconMenu className="h-4 w-4 text-secondary" />
+        )}
       </button>
     </>
   );
@@ -110,7 +114,7 @@ export const Navigation = ({
 
 const SidebarHeader = () => {
   return (
-    <div className="flex space-x-2 ">
+    <a href="/" className="flex space-x-2 hover:opacity-90 ">
       <Image
         src="https://avatars.githubusercontent.com/u/66649036?v=4"
         alt="Avatar"
@@ -122,6 +126,6 @@ const SidebarHeader = () => {
         <p className="font-bold text-primary">Brayan Paucar</p>
         <p className="font-light text-xs  text-secondary">Software Developer</p>
       </div>
-    </div>
+    </a>
   );
 };

@@ -1,60 +1,78 @@
 import Image from "next/image";
-import React from "react";
-import { Heading } from "./Heading";
 import { twMerge } from "tailwind-merge";
+import { Heading } from "./Heading";
 
 export const TechStack = () => {
   const stack = [
     {
-      title: "Next.js",
-      src: "/images/logos/next.png",
-
-      className: "h-10 w-14",
-    },
-
-    {
-      title: "Figma",
-      src: "/images/logos/figma.png",
-
-      className: "h-10 w-8",
-    },
-    {
       title: "TypeScript",
-      src: "/images/logos/ts.svg",
-
+      src: "https://www.svgrepo.com/show/349540/typescript.svg",
       className: "h-10 w-10",
     },
     {
-      title: "Prisma",
-      src: "/images/logos/prisma.svg",
-
+      title: "Next.js",
+      src: "https://www.svgrepo.com/show/378440/nextjs-fill.svg",
       className: "h-10 w-10",
     },
     {
-      title: "tRPC",
-      src: "/images/logos/trpc.svg",
-
-      className: "h-10 w-10",
+      title: "Remix",
+      src: "./images/logos/remix.svg",
+      className: "h-8 w-8 mt-1",
     },
     {
       title: "Node",
-      src: "/images/logos/node.png",
+      src: "https://www.svgrepo.com/show/303266/nodejs-icon-logo.svg",
+      className: "h-10 w-10",
+    },
+    {
+      title: "Mysql",
+      src: "https://www.svgrepo.com/show/373848/mysql.svg",
+      className: "h-10 w-10",
+    },
+    {
+      title: "Postgresql",
+      src: "https://www.svgrepo.com/show/354200/postgresql.svg",
+      className: "h-10 w-10",
+    },
+    {
+      title: "Python",
+      src: "https://www.svgrepo.com/show/452091/python.svg",
+      className: "h-10 w-10",
+    },
 
-      className: "h-10 w-12",
+    {
+      title: "Prisma",
+      src: "https://www.svgrepo.com/show/373776/light-prisma.svg",
+      className: "h-10 w-10",
     },
     {
       title: "Tailwind",
-      src: "/images/logos/tailwind.png",
-
-      className: "h-10 w-24",
+      src: "https://www.svgrepo.com/show/354431/tailwindcss-icon.svg",
+      className: "h-10 w-10",
     },
     {
-      title: "Vercel",
-      src: "/images/logos/vercel.png",
+      title: "Jest",
+      src: "https://www.svgrepo.com/show/373701/jest-snapshot.svg",
+      className: "h-10 w-10",
+    },
+    {
+      title: "Cypress",
+      src: "https://www.svgrepo.com/show/330247/cypress.svg",
+      className: "h-10 w-10",
+    },
 
-      className: "h-10 w-24",
+    {
+      title: "Docker",
+      src: "https://www.svgrepo.com/show/448221/docker.svg",
+      className: "h-10 w-10",
+    },
+    {
+      title: "Figma",
+      src: "https://www.svgrepo.com/show/452202/figma.svg",
+      className: "h-10 w-10",
     },
   ];
+
   return (
     <div>
       <Heading
