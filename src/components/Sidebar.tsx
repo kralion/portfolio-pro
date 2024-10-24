@@ -43,7 +43,7 @@ export const Sidebar = () => {
         )}
       </AnimatePresence>
       <button
-        className="fixed lg:hidden bottom-4 right-4 h-10 w-10 border border-neutral-200 rounded-full backdrop-blur-sm flex items-center justify-center z-10"
+        className="fixed lg:hidden bottom-4 right-4 h-10 w-10 border border-neutral-200 dark:border-neutral-500 rounded-full backdrop-blur-sm flex items-center justify-center z-10"
         onClick={() => setOpen(!open)}
       >
         {open ? (
@@ -123,7 +123,9 @@ const SidebarHeader = () => {
         className="object-cover object-top rounded-full flex-shrink-0"
       />
       <div className="flex text-sm flex-col">
-        <p className="font-bold text-primary">Brayan Paucar</p>
+        <p className="font-bold text-primary dark:text-white/50">
+          Brayan Paucar
+        </p>
         <p className="font-light text-xs  text-secondary">Software Developer</p>
       </div>
     </a>
