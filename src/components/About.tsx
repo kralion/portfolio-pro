@@ -33,7 +33,7 @@ export default function About() {
               src={image}
               width={200}
               height={400}
-              alt="about"
+              alt="ab"
               className="rounded-md object-cover transform rotate-3 shadow-xl block w-full h-40 md:h-60 hover:rotate-0 transition duration-200"
             />
           </motion.div>
@@ -70,41 +70,47 @@ export default function About() {
       </div>
 
       <div className="max-w-4xl">
-        <Paragraph className=" mt-4">
-          Hey there, I&apos;m Brayan, a dynamic Software and AI Engineer from
-          South America, committed to forging innovative solutions for
-          real-world challenges. My drive for tackling complex projects is
-          matched by a keen ability to adapt to new technologies and a passion
-          for continuous improvement through CI/CD practices. I focus on
-          crafting elegant & robust applications that align with overarching
-          business objectives and user demands.
+        <Paragraph className="mt-4">
+          Hi! I’m Brayan, a passionate Software and AI Engineer from South
+          America dedicated to creating innovative solutions that address
+          real-world challenges. My expertise spans full-stack development,
+          machine learning, and data analytics, allowing me to transform complex
+          problems into elegant applications.
         </Paragraph>
 
-        <Paragraph className=" mt-4">
-          Since the early days of my journey, I&apos;ve been captivated by the
-          art of crafting exceptional digital experiences. As a developer, I
-          thrive on turning lines of code into functional and elegant solutions.
-          My goal is to not just create software, but to build digital marvels
-          that seamlessly merge form and function. My expertise spans across
-          full-stack web development, machine learning, and data analytics,
-          allowing me to craft comprehensive solutions that are both technically
-          sound and user-friendly. I have a strong background in React, Next.js,
-          and Tailwind CSS, ensuring that the applications I build are modern,
-          scalable, and maintainable. Beyond my technical skills, I pride myself
-          on my ability to communicate effectively, lead teams, and resolve
-          conflicts, making me a versatile professional capable of navigating
-          the complexities of any project.
-        </Paragraph>
-        <Paragraph className=" mt-4">
-          I am constantly learning and adapting, always seeking to enhance my
-          skills and knowledge in both technology and business domains.
-          Let&apos;s innovate and turn real-world problems into impactful,
-          progressive, and driving solutions together..
+        <Paragraph className="mt-4">
+          Over the years, I’ve successfully led projects that improved
+          application performance by over 30%, showcasing my commitment to
+          excellence through continuous learning and CI/CD practices. I have
+          strong proficiency in technologies around the React JS ecosystem and
+          Node JS, ensuring that my work is not only functional but also modern
+          and user-friendly.
         </Paragraph>
 
-        <Paragraph className=" mt-4">
-          Thank you for being here, and I can&apos;t wait to embark on this
-          adventure with you.
+        <Paragraph className="mt-4">
+          What drives me is the opportunity to merge technology with creativity
+          to craft exceptional digital experiences. I believe in the power of
+          collaboration and effective communication, leveraging emotional
+          intelligence to build strong teams and resolve challenges.
+        </Paragraph>
+
+        <Paragraph className="mt-4">
+          Feel free to explore{" "}
+          <a
+            href="/projects"
+            className=" hover:opacity-80 underline text-yellow-500  duration-100 cursor-pointer"
+          >
+            {" "}
+            my projects
+          </a>{" "}
+          or reach out if you’d like to{" "}
+          <a
+            href="/contact"
+            className=" hover:opacity-80 underline text-yellow-500  duration-100 cursor-pointer"
+          >
+            {" "}
+            connect!
+          </a>{" "}
         </Paragraph>
       </div>
     </div>

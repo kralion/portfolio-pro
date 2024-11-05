@@ -1,27 +1,36 @@
 "use client";
 import React, { useState } from "react";
 
-const defaultFormState = {
-  name: {
-    value: "",
-    error: "",
-  },
-  email: {
-    value: "",
-    error: "",
-  },
-  message: {
-    value: "",
-    error: "",
-  },
-};
 export const Contact = () => {
-  const [formData, setFormData] = useState(defaultFormState);
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
-  const handleSubmit = (e: any) => {
+  const handleSubmit = async (e: any) => {
     e.preventDefault();
-    // Write your submit logic here
-    console.log(formData);
+    const data = { name, email };
+
+    try {
+      const response = await fetch(
+        "https://script.google.com/macros/s/AKfycbxQTyvQQGDLmkyc3Xj0A5mdU4jpXQAM2pt-YV7EFNUzFQ6PrrUyG2C78uqfP4uXTCOn-g/exec",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(data),
+        }
+      );
+
+      if (response.ok) {
+        const result = await response.json();
+        alert("Data sent successfully! Result: " + result.result);
+      } else {
+        alert("Error sending data");
+      }
+    } catch (error) {
+      console.error("Error sending data:", error);
+    }
   };
   return (
     <form className="form" onSubmit={handleSubmit}>
@@ -30,30 +39,18 @@ export const Contact = () => {
           type="text"
           placeholder="Your Name"
           className="bg-neutral-100 dark:bg-neutral-900 focus:outline-none focus:ring-2 focus:ring-neutral-200 dark:focus:ring-neutral-700 px-2 py-2 rounded-md text-sm text-neutral-700 dark:text-neutral-400 w-full"
-          value={formData.name.value}
+          value={name}
           onChange={(e) => {
-            setFormData({
-              ...formData,
-              name: {
-                value: e.target.value,
-                error: "",
-              },
-            });
+            setName(e.target.value);
           }}
         />
         <input
           type="email"
           placeholder="Your email address"
           className="bg-neutral-100 dark:bg-neutral-900 focus:outline-none focus:ring-2 focus:ring-neutral-200 dark:focus:ring-neutral-700 px-2 py-2 rounded-md text-sm text-neutral-700 dark:text-neutral-400 w-full"
-          value={formData.email.value}
+          value={email}
           onChange={(e) => {
-            setFormData({
-              ...formData,
-              email: {
-                value: e.target.value,
-                error: "",
-              },
-            });
+            setEmail(e.target.value);
           }}
         />
       </div>
@@ -62,23 +59,18 @@ export const Contact = () => {
           placeholder="Your Message"
           rows={10}
           className="bg-neutral-100 mt-4 dark:bg-neutral-900 focus:outline-none focus:ring-2 focus:ring-neutral-200 dark:focus:ring-neutral-700 px-2 py-2 rounded-md text-sm text-neutral-700 dark:text-neutral-400 w-full"
-          value={formData.message.value}
+          value={message}
           onChange={(e) => {
-            setFormData({
-              ...formData,
-              message: {
-                value: e.target.value,
-                error: "",
-              },
-            });
+            setMessage(e.target.value);
           }}
         />
       </div>
+
       <button
-        className="w-full px-2 py-2 mt-4 bg-neutral-100 dark:bg-neutral-500 rounded-md font-bold text-neutral-500 dark:text-neutral-200"
+        className="w-full px-4 py-2 mt-4 bg-gradient-to-r from-yellow-500 to-orange-500 hover:opacity-90 text-white rounded-md font-bold shadow-lg "
         type="submit"
       >
-        Submit{" "}
+        Submit
       </button>
     </form>
   );
