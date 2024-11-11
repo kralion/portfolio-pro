@@ -11,12 +11,11 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "Brayan Paucar",
-  description:
-    "Brayan Paucar is a software developer both mobile and web. He is a digital nomad and travels around the world while working remotely.",
+  description: "Bridging the gap between ideas and reality",
   icons: [
     {
       rel: "icon",
-      url: "https://github.com/kralion/portfolio/blob/main/public/icon.png?raw=true",
+      url: "https://avatars.githubusercontent.com/u/66649036?v=4",
     },
   ],
 };

@@ -37,7 +37,10 @@ export const Sidebar = () => {
               <SidebarHeader />
               <Navigation setOpen={setOpen} />
             </div>
-            <Badge href="/resume" text="Read Resume" />
+            <Badge
+              href="https://cal.com/brayanpaucar/contact"
+              text="Book a Call"
+            />
             <ThemeToggle />
           </motion.div>
         )}
@@ -96,7 +99,7 @@ export const Navigation = ({
           key={link.href}
           href={link.href}
           className={twMerge(
-            "text-secondary hover:text-primary transition duration-200 flex items-center space-x-2 py-2 px-2 rounded-md text-sm"
+            "text-secondary hover:text-primary transition duration-200 flex items-center space-x-2 py-2 px-2 rounded-md text-sm "
           )}
         >
           <link.icon
